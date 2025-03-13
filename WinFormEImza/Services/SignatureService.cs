@@ -15,13 +15,21 @@ namespace WinFormEImza.Services
     {
         private readonly ConcurrentDictionary<string, SignatureResponse> _signatureStatus;
         private readonly PdfSigner _pdfSigner;
+        private readonly OfficeDocumentSigner _officeSigner;
         private readonly HttpClient _httpClient;
 
         public SignatureService()
         {
             _signatureStatus = new ConcurrentDictionary<string, SignatureResponse>();
             _pdfSigner = new PdfSigner();
+            _officeSigner = new OfficeDocumentSigner();
             _httpClient = new HttpClient();
+        }
+
+        private bool IsOfficeDocument(string fileName)
+        {
+            string ext = Path.GetExtension(fileName).ToLower();
+            return ext == ".docx" || ext == ".xlsx";
         }
 
         public Task<SignatureResponse> QueueSignatureRequestAsync(SignatureRequest request)
@@ -70,27 +78,43 @@ namespace WinFormEImza.Services
 
                     try
                     {
-                        // Decode base64 PDF
-                        byte[] pdfBytes = Convert.FromBase64String(doc.Content);
+                        // Decode base64 content
+                        byte[] fileBytes = Convert.FromBase64String(doc.Content);
                         string tempInputPath = Path.GetTempFileName();
                         string tempOutputPath = Path.GetTempFileName();
+                        string fileName = doc.FileName ?? "document" + Path.GetExtension(tempInputPath);
 
-                        File.WriteAllBytes(tempInputPath, pdfBytes);
+                        File.WriteAllBytes(tempInputPath, fileBytes);
 
-                        // Create PdfRequestDTO
-                        var pdfRequest = new PdfRequestDTO
+                        if (IsOfficeDocument(fileName))
                         {
-                            KaynakPdfYolu = tempInputPath,
-                            HedefPdfYolu = tempOutputPath,
-                            DonglePassword = "" // Handle smartcard password
-                        };
+                            // Get certificate for Office document signing
+                            SmartCardManager smartCardManager = SmartCardManager.getInstance();
+                            var smartCardCertificate = smartCardManager.getSignatureCertificate(false, false);
+                            var certificate = smartCardCertificate.asX509Certificate2();
 
-                        // Sign PDF
-                        string signResult = _pdfSigner.SignPDF(pdfRequest);
+                            // Sign Office document
+                            _officeSigner.SignDocument(tempInputPath, tempOutputPath, certificate);
+                        }
+                        else
+                        {
+                            // Sign PDF document
+                            var pdfRequest = new PdfRequestDTO
+                            {
+                                KaynakPdfYolu = tempInputPath,
+                                HedefPdfYolu = tempOutputPath,
+                                DonglePassword = "", // Handle smartcard password
+                                IsBase64Content = true,
+                                SignatureX = doc.SignaturePosition?.X,
+                                SignatureY = doc.SignaturePosition?.Y
+                            };
+
+                            _pdfSigner.SignPDF(pdfRequest);
+                        }
 
                         if (File.Exists(tempOutputPath))
                         {
-                            // Read signed PDF and convert to base64
+                            // Read signed file and convert to base64
                             byte[] signedBytes = File.ReadAllBytes(tempOutputPath);
                             result.SignedContent = Convert.ToBase64String(signedBytes);
                             result.Status = "Completed";
