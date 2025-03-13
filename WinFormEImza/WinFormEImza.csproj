@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{48BD2798-0C64-41F2-A09E-7838E870C590}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WinFormEImza</RootNamespace>
+    <AssemblyName>WinFormEImza</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="asn1rtcs, Version=6.0.7639.28535, Culture=neutral, PublicKeyToken=e419c4ffbcc12130, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\asn1rtcs.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+      <Aliases>merged</Aliases>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.14.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-asic, Version=2.3.7.1, Culture=neutral, PublicKeyToken=4d1d81e4a0cd6187, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\ma3api-asic.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-asn, Version=2.3.7.1, Culture=neutral, PublicKeyToken=4d1d81e4a0cd6187, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\ma3api-asn.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-certstore, Version=2.3.7.1, Culture=neutral, PublicKeyToken=4d1d81e4a0cd6187, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\ma3api-certstore.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-certvalidation, Version=2.3.7.1, Culture=neutral, PublicKeyToken=4d1d81e4a0cd6187, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\ma3api-certvalidation.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-cmssignature, Version=2.3.7.1, Culture=neutral, PublicKeyToken=4d1d81e4a0cd6187, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\ma3api-cmssignature.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-common, Version=2.3.7.1, Culture=neutral, PublicKeyToken=4d1d81e4a0cd6187, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\ma3api-common.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-crypto, Version=2.3.7.1, Culture=neutral, PublicKeyToken=4d1d81e4a0cd6187, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\ma3api-crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-crypto-bouncyprovider, Version=2.3.7.1, Culture=neutral, PublicKeyToken=4d1d81e4a0cd6187, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\ma3api-crypto-bouncyprovider.dll</HintPath>
+      <Aliases>ma3Bouncy</Aliases>
+    </Reference>
+    <Reference Include="ma3api-infra, Version=2.3.7.1, Culture=neutral, PublicKeyToken=4d1d81e4a0cd6187, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\ma3api-infra.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-mssclient, Version=2.3.7.1, Culture=neutral, PublicKeyToken=4d1d81e4a0cd6187, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\ma3api-mssclient.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-mssclient-aveaprovider, Version=2.3.7.1, Culture=neutral, PublicKeyToken=4d1d81e4a0cd6187, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\ma3api-mssclient-aveaprovider.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-mssclient-turkcellprovider, Version=2.3.7.1, Culture=neutral, PublicKeyToken=4d1d81e4a0cd6187, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\ma3api-mssclient-turkcellprovider.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-mssclient-vodafoneprovider, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\ma3api-mssclient-vodafoneprovider.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-pkcs11-interop, Version=2.2.24.0, Culture=neutral, PublicKeyToken=4d1d81e4a0cd6187, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\ma3api-pkcs11-interop.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-signature, Version=2.3.7.1, Culture=neutral, PublicKeyToken=4d1d81e4a0cd6187, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\ma3api-signature.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-smartcard, Version=2.3.7.1, Culture=neutral, PublicKeyToken=4d1d81e4a0cd6187, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\ma3api-smartcard.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-xmlsignature, Version=2.3.7.1, Culture=neutral, PublicKeyToken=4d1d81e4a0cd6187, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\ma3api-xmlsignature.dll</HintPath>
+    </Reference>
+    <Reference Include="MobilImzaYapilari, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\MobilImzaYapilari.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.5.10.11092, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VodafoneMobilImza, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\VodafoneMobilImza.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="WinFormEImza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormEImza.Designer.cs">
+      <DependentUpon>WinFormEImza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Islemler\GenelIslemler.cs" />
+    <Compile Include="Islemler\GridIslemleri.cs" />
+    <Compile Include="Nesneler\BelgeIstek.cs" />
+    <Compile Include="Nesneler\CadesSampleBase.cs" />
+    <Compile Include="Nesneler\CadesSignatureValidation.cs" />
+    <Compile Include="Nesneler\ImzaBelge.cs" />
+    <Compile Include="Nesneler\MyInputBox.cs" />
+    <Compile Include="Nesneler\PdfRequestDTO.cs" />
+    <Compile Include="Nesneler\PdfSigner.cs" />
+    <Compile Include="Nesneler\SampleBase.cs" />
+    <Compile Include="Nesneler\SignatureManager.cs" />
+    <Compile Include="Nesneler\SmartCardManager.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="WinFormEImza.resx">
+      <DependentUpon>WinFormEImza.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Lisans\certs\Sertifika.cer" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config\Ayarlar.xml" />
+    <Content Include="config\certval-policy-malimuhur.xml" />
+    <Content Include="config\certval-policy-test-crl.xml" />
+    <Content Include="config\certval-policy-test.xml" />
+    <Content Include="config\certval-policy.xml" />
+    <Content Include="config\esya-signature-config.xml" />
+    <Content Include="config\log4net.xml" />
+    <Content Include="config\smartcard-config.xml" />
+    <Content Include="config\xmlsignature-config.xml" />
+    <Content Include="lib\asn1rtcs.dll" />
+    <Content Include="lib\en-US\ma3api-cmssignature.resources.dll" />
+    <Content Include="lib\en-US\ma3api-common.resources.dll" />
+    <Content Include="lib\en-US\ma3api-smartcard.resources.dll" />
+    <Content Include="lib\en-US\ma3api-xmlsignature.resources.dll" />
+    <Content Include="lib\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="lib\log4net.dll" />
+    <Content Include="lib\ma3api-asic.dll" />
+    <Content Include="lib\ma3api-asn.dll" />
+    <Content Include="lib\ma3api-certstore.dll" />
+    <Content Include="lib\ma3api-certvalidation.dll" />
+    <Content Include="lib\ma3api-cmssignature.dll" />
+    <Content Include="lib\ma3api-common.dll" />
+    <Content Include="lib\ma3api-crypto-bouncyprovider.dll" />
+    <Content Include="lib\ma3api-crypto.dll" />
+    <Content Include="lib\ma3api-infra.dll" />
+    <Content Include="lib\ma3api-mssclient-aveaprovider.dll" />
+    <Content Include="lib\ma3api-mssclient-turkcellprovider.dll" />
+    <Content Include="lib\ma3api-mssclient-vodafoneprovider.dll" />
+    <Content Include="lib\ma3api-mssclient.dll" />
+    <Content Include="lib\ma3api-pkcs11-interop.dll" />
+    <Content Include="lib\ma3api-signature.dll" />
+    <Content Include="lib\ma3api-smartcard.dll" />
+    <Content Include="lib\ma3api-xmlsignature.dll" />
+    <Content Include="lib\MobilImzaYapilari.dll" />
+    <Content Include="lib\nunit.framework.dll" />
+    <Content Include="lib\tr-TR\ma3api-cmssignature.resources.dll" />
+    <Content Include="lib\tr-TR\ma3api-common.resources.dll" />
+    <Content Include="lib\tr-TR\ma3api-smartcard.resources.dll" />
+    <Content Include="lib\tr-TR\ma3api-xmlsignature.resources.dll" />
+    <Content Include="lib\VodafoneMobilImza.dll" />
+    <Content Include="lib\x64\System.Data.SQLite.dll" />
+    <Content Include="lib\x86\System.Data.SQLite.dll" />
+    <Content Include="Lisans\lisans.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

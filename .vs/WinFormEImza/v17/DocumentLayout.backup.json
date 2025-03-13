@@ -1,0 +1,269 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{48BD2798-0C64-41F2-A09E-7838E870C590}|WinFormEImza\\WinFormEImza.csproj|C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\winformeimza\\nesneler\\smartcardmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48BD2798-0C64-41F2-A09E-7838E870C590}|WinFormEImza\\WinFormEImza.csproj|solutionrelative:winformeimza\\nesneler\\smartcardmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48BD2798-0C64-41F2-A09E-7838E870C590}|WinFormEImza\\WinFormEImza.csproj|C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\winformeimza\\nesneler\\signaturemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48BD2798-0C64-41F2-A09E-7838E870C590}|WinFormEImza\\WinFormEImza.csproj|solutionrelative:winformeimza\\nesneler\\signaturemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48BD2798-0C64-41F2-A09E-7838E870C590}|WinFormEImza\\WinFormEImza.csproj|C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\winformeimza\\nesneler\\samplebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48BD2798-0C64-41F2-A09E-7838E870C590}|WinFormEImza\\WinFormEImza.csproj|solutionrelative:winformeimza\\nesneler\\samplebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48BD2798-0C64-41F2-A09E-7838E870C590}|WinFormEImza\\WinFormEImza.csproj|C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\winformeimza\\nesneler\\pdfsigner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48BD2798-0C64-41F2-A09E-7838E870C590}|WinFormEImza\\WinFormEImza.csproj|solutionrelative:winformeimza\\nesneler\\pdfsigner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48BD2798-0C64-41F2-A09E-7838E870C590}|WinFormEImza\\WinFormEImza.csproj|c:\\users\\ramoz\\tfs\\formuygulamalari\\winformeimza\\winformeimza\\nesneler\\pdfrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48BD2798-0C64-41F2-A09E-7838E870C590}|WinFormEImza\\WinFormEImza.csproj|solutionrelative:winformeimza\\nesneler\\pdfrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48BD2798-0C64-41F2-A09E-7838E870C590}|WinFormEImza\\WinFormEImza.csproj|c:\\users\\ramoz\\tfs\\formuygulamalari\\winformeimza\\winformeimza\\nesneler\\myinputbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48BD2798-0C64-41F2-A09E-7838E870C590}|WinFormEImza\\WinFormEImza.csproj|solutionrelative:winformeimza\\nesneler\\myinputbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48BD2798-0C64-41F2-A09E-7838E870C590}|WinFormEImza\\WinFormEImza.csproj|c:\\users\\ramoz\\tfs\\formuygulamalari\\winformeimza\\winformeimza\\nesneler\\imzabelge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48BD2798-0C64-41F2-A09E-7838E870C590}|WinFormEImza\\WinFormEImza.csproj|solutionrelative:winformeimza\\nesneler\\imzabelge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48BD2798-0C64-41F2-A09E-7838E870C590}|WinFormEImza\\WinFormEImza.csproj|c:\\users\\ramoz\\tfs\\formuygulamalari\\winformeimza\\winformeimza\\nesneler\\cadessignaturevalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48BD2798-0C64-41F2-A09E-7838E870C590}|WinFormEImza\\WinFormEImza.csproj|solutionrelative:winformeimza\\nesneler\\cadessignaturevalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48BD2798-0C64-41F2-A09E-7838E870C590}|WinFormEImza\\WinFormEImza.csproj|C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\winformeimza\\nesneler\\cadessamplebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48BD2798-0C64-41F2-A09E-7838E870C590}|WinFormEImza\\WinFormEImza.csproj|solutionrelative:winformeimza\\nesneler\\cadessamplebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48BD2798-0C64-41F2-A09E-7838E870C590}|WinFormEImza\\WinFormEImza.csproj|c:\\users\\ramoz\\tfs\\formuygulamalari\\winformeimza\\winformeimza\\nesneler\\belgeistek.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48BD2798-0C64-41F2-A09E-7838E870C590}|WinFormEImza\\WinFormEImza.csproj|solutionrelative:winformeimza\\nesneler\\belgeistek.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48BD2798-0C64-41F2-A09E-7838E870C590}|WinFormEImza\\WinFormEImza.csproj|c:\\users\\ramoz\\tfs\\formuygulamalari\\winformeimza\\winformeimza\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48BD2798-0C64-41F2-A09E-7838E870C590}|WinFormEImza\\WinFormEImza.csproj|solutionrelative:winformeimza\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48BD2798-0C64-41F2-A09E-7838E870C590}|WinFormEImza\\WinFormEImza.csproj|c:\\users\\ramoz\\tfs\\formuygulamalari\\winformeimza\\winformeimza\\islemler\\genelislemler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48BD2798-0C64-41F2-A09E-7838E870C590}|WinFormEImza\\WinFormEImza.csproj|solutionrelative:winformeimza\\islemler\\genelislemler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48BD2798-0C64-41F2-A09E-7838E870C590}|WinFormEImza\\WinFormEImza.csproj|c:\\users\\ramoz\\tfs\\formuygulamalari\\winformeimza\\winformeimza\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48BD2798-0C64-41F2-A09E-7838E870C590}|WinFormEImza\\WinFormEImza.csproj|solutionrelative:winformeimza\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48BD2798-0C64-41F2-A09E-7838E870C590}|WinFormEImza\\WinFormEImza.csproj|C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\winformeimza\\winformeimza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48BD2798-0C64-41F2-A09E-7838E870C590}|WinFormEImza\\WinFormEImza.csproj|solutionrelative:winformeimza\\winformeimza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PdfRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\WinFormEImza\\Nesneler\\PdfRequestDTO.cs",
+              "RelativeDocumentMoniker": "WinFormEImza\\Nesneler\\PdfRequestDTO.cs",
+              "ToolTip": "C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\WinFormEImza\\Nesneler\\PdfRequestDTO.cs",
+              "RelativeToolTip": "WinFormEImza\\Nesneler\\PdfRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T07:21:49.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MyInputBox.cs",
+              "DocumentMoniker": "C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\WinFormEImza\\Nesneler\\MyInputBox.cs",
+              "RelativeDocumentMoniker": "WinFormEImza\\Nesneler\\MyInputBox.cs",
+              "ToolTip": "C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\WinFormEImza\\Nesneler\\MyInputBox.cs",
+              "RelativeToolTip": "WinFormEImza\\Nesneler\\MyInputBox.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T07:21:47.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ImzaBelge.cs",
+              "DocumentMoniker": "C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\WinFormEImza\\Nesneler\\ImzaBelge.cs",
+              "RelativeDocumentMoniker": "WinFormEImza\\Nesneler\\ImzaBelge.cs",
+              "ToolTip": "C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\WinFormEImza\\Nesneler\\ImzaBelge.cs",
+              "RelativeToolTip": "WinFormEImza\\Nesneler\\ImzaBelge.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T07:21:44.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CadesSignatureValidation.cs",
+              "DocumentMoniker": "C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\WinFormEImza\\Nesneler\\CadesSignatureValidation.cs",
+              "RelativeDocumentMoniker": "WinFormEImza\\Nesneler\\CadesSignatureValidation.cs",
+              "ToolTip": "C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\WinFormEImza\\Nesneler\\CadesSignatureValidation.cs",
+              "RelativeToolTip": "WinFormEImza\\Nesneler\\CadesSignatureValidation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T07:21:41.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BelgeIstek.cs",
+              "DocumentMoniker": "C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\WinFormEImza\\Nesneler\\BelgeIstek.cs",
+              "RelativeDocumentMoniker": "WinFormEImza\\Nesneler\\BelgeIstek.cs",
+              "ToolTip": "C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\WinFormEImza\\Nesneler\\BelgeIstek.cs",
+              "RelativeToolTip": "WinFormEImza\\Nesneler\\BelgeIstek.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T07:21:30.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\WinFormEImza\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "WinFormEImza\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\WinFormEImza\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "WinFormEImza\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T07:21:14.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\WinFormEImza\\Program.cs",
+              "RelativeDocumentMoniker": "WinFormEImza\\Program.cs",
+              "ToolTip": "C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\WinFormEImza\\Program.cs",
+              "RelativeToolTip": "WinFormEImza\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T07:20:44.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SmartCardManager.cs",
+              "DocumentMoniker": "C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\WinFormEImza\\Nesneler\\SmartCardManager.cs",
+              "RelativeDocumentMoniker": "WinFormEImza\\Nesneler\\SmartCardManager.cs",
+              "ToolTip": "C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\WinFormEImza\\Nesneler\\SmartCardManager.cs",
+              "RelativeToolTip": "WinFormEImza\\Nesneler\\SmartCardManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T20:49:19.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SampleBase.cs",
+              "DocumentMoniker": "C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\WinFormEImza\\Nesneler\\SampleBase.cs",
+              "RelativeDocumentMoniker": "WinFormEImza\\Nesneler\\SampleBase.cs",
+              "ToolTip": "C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\WinFormEImza\\Nesneler\\SampleBase.cs",
+              "RelativeToolTip": "WinFormEImza\\Nesneler\\SampleBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T20:49:19.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CadesSampleBase.cs",
+              "DocumentMoniker": "C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\WinFormEImza\\Nesneler\\CadesSampleBase.cs",
+              "RelativeDocumentMoniker": "WinFormEImza\\Nesneler\\CadesSampleBase.cs",
+              "ToolTip": "C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\WinFormEImza\\Nesneler\\CadesSampleBase.cs",
+              "RelativeToolTip": "WinFormEImza\\Nesneler\\CadesSampleBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T20:49:19.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SignatureManager.cs",
+              "DocumentMoniker": "C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\WinFormEImza\\Nesneler\\SignatureManager.cs",
+              "RelativeDocumentMoniker": "WinFormEImza\\Nesneler\\SignatureManager.cs",
+              "ToolTip": "C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\WinFormEImza\\Nesneler\\SignatureManager.cs",
+              "RelativeToolTip": "WinFormEImza\\Nesneler\\SignatureManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T20:48:21.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PdfSigner.cs",
+              "DocumentMoniker": "C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\WinFormEImza\\Nesneler\\PdfSigner.cs",
+              "RelativeDocumentMoniker": "WinFormEImza\\Nesneler\\PdfSigner.cs",
+              "ToolTip": "C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\WinFormEImza\\Nesneler\\PdfSigner.cs",
+              "RelativeToolTip": "WinFormEImza\\Nesneler\\PdfSigner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T20:03:43.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "WinFormEImza.cs",
+              "DocumentMoniker": "C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\WinFormEImza\\WinFormEImza.cs",
+              "RelativeDocumentMoniker": "WinFormEImza\\WinFormEImza.cs",
+              "ToolTip": "C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\WinFormEImza\\WinFormEImza.cs",
+              "RelativeToolTip": "WinFormEImza\\WinFormEImza.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAAArwGEAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T18:37:12.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GenelIslemler.cs",
+              "DocumentMoniker": "C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\WinFormEImza\\Islemler\\GenelIslemler.cs",
+              "RelativeDocumentMoniker": "WinFormEImza\\Islemler\\GenelIslemler.cs",
+              "ToolTip": "C:\\Users\\ramoz\\TFS\\FormUygulamalari\\WinFormEImza\\WinFormEImza\\Islemler\\GenelIslemler.cs",
+              "RelativeToolTip": "WinFormEImza\\Islemler\\GenelIslemler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T18:31:50.241Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
