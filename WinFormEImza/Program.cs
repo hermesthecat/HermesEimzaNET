@@ -21,6 +21,17 @@ namespace WinFormEImza
             builder.Services.AddSwaggerGen();
             builder.Services.AddSingleton<ISignatureService, SignatureService>();
 
+            // Add CORS policy
+            builder.Services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(builder =>
+                {
+                    builder.WithOrigins("http://localhost:5000")
+                           .AllowAnyHeader()
+                           .AllowAnyMethod();
+                });
+            });
+
             var app = builder.Build();
 
             // Configure middleware
@@ -31,6 +42,9 @@ namespace WinFormEImza
             }
 
             app.UseHttpsRedirection();
+            app.UseStaticFiles(); // Enable serving static files from wwwroot
+            app.UseDefaultFiles(); // Enable serving default files (index.html)
+            app.UseCors(); // Enable CORS
             app.UseAuthorization();
             app.MapControllers();
 
