@@ -42,8 +42,8 @@ namespace WinFormEImza
             }
             catch (Exception ex)
             {
-                GenelIslemler.LogaYaz(" HATA [WinFormEImza_Load] (" + ex.Message + ")");
-                MessageBox.Show("WinFormEImza_Load", " Exception [WinFormEImza_Load] (" + ex.Message + ")", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                GenelIslemler.LogaYaz(" HATA [HermesEImza_Load] (" + ex.Message + ")");
+                MessageBox.Show("HermesEImza_Load", " Exception [HermesEImza_Load] (" + ex.Message + ")", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void gridResetle()
@@ -82,7 +82,7 @@ namespace WinFormEImza
             }
             catch (Exception ex)
             {
-                GenelIslemler.LogaYaz(" HATA [WinFormEImza_FormClosing] (" + ex.Message + ")");
+                GenelIslemler.LogaYaz(" HATA [HermesEImza_FormClosing] (" + ex.Message + ")");
             }
         }
 
@@ -135,7 +135,7 @@ namespace WinFormEImza
                     if ((bool)((DataGridViewCheckBoxCell)row.Cells[0]).Value)
                     {
                         string imzalanacakDosya = row.Cells[1].Value.ToString();
-                        string imzalanmisDosya = Regex.Replace(imzalanacakDosya, ".pdf", "-WinFormEImzali.pdf", RegexOptions.IgnoreCase);
+                        string imzalanmisDosya = Regex.Replace(imzalanacakDosya, ".pdf", "-HermesEImzali.pdf", RegexOptions.IgnoreCase);
                         string hedefUploadUrl = row.Cells[2].Value.ToString();
                         string hedefUploadQueryString = row.Cells[3].Value.ToString();
                         PdfRequestDTO requestDTO = new PdfRequestDTO()

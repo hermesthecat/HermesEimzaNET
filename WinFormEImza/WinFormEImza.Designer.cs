@@ -92,7 +92,7 @@
             this.lstBoxLog.BackColor = System.Drawing.Color.FloralWhite;
             this.lstBoxLog.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lstBoxLog.FormattingEnabled = true;
-            this.lstBoxLog.ItemHeight = 20;
+            this.lstBoxLog.ItemHeight = 15;
             this.lstBoxLog.Location = new System.Drawing.Point(14, 330);
             this.lstBoxLog.Name = "lstBoxLog";
             this.lstBoxLog.Size = new System.Drawing.Size(1134, 180);
@@ -104,7 +104,7 @@
             this.lblLog.BackColor = System.Drawing.Color.LightYellow;
             this.lblLog.Location = new System.Drawing.Point(12, 307);
             this.lblLog.Name = "lblLog";
-            this.lblLog.Size = new System.Drawing.Size(36, 20);
+            this.lblLog.Size = new System.Drawing.Size(28, 15);
             this.lblLog.TabIndex = 4;
             this.lblLog.Text = "Log";
             // 
@@ -114,7 +114,7 @@
             this.textBox1.MaxLength = 4;
             this.textBox1.Name = "textBox1";
             this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(100, 26);
+            this.textBox1.Size = new System.Drawing.Size(100, 21);
             this.textBox1.TabIndex = 5;
             this.textBox1.Visible = false;
             // 
@@ -124,7 +124,7 @@
             this.label1.BackColor = System.Drawing.Color.LightYellow;
             this.label1.Location = new System.Drawing.Point(960, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 20);
+            this.label1.Size = new System.Drawing.Size(67, 15);
             this.label1.TabIndex = 6;
             this.label1.Text = "E-İmza Pin";
             this.label1.Visible = false;
@@ -151,7 +151,7 @@
             this.chkGunBoyuTekrarSorma.AutoSize = true;
             this.chkGunBoyuTekrarSorma.Location = new System.Drawing.Point(219, 20);
             this.chkGunBoyuTekrarSorma.Name = "chkGunBoyuTekrarSorma";
-            this.chkGunBoyuTekrarSorma.Size = new System.Drawing.Size(180, 24);
+            this.chkGunBoyuTekrarSorma.Size = new System.Drawing.Size(139, 19);
             this.chkGunBoyuTekrarSorma.TabIndex = 8;
             this.chkGunBoyuTekrarSorma.Text = "Gün boyu PIN sorma";
             this.chkGunBoyuTekrarSorma.UseVisualStyleBackColor = true;
@@ -162,7 +162,7 @@
             this.chkDebugMod.AutoSize = true;
             this.chkDebugMod.Location = new System.Drawing.Point(382, 21);
             this.chkDebugMod.Name = "chkDebugMod";
-            this.chkDebugMod.Size = new System.Drawing.Size(120, 24);
+            this.chkDebugMod.Size = new System.Drawing.Size(91, 19);
             this.chkDebugMod.TabIndex = 9;
             this.chkDebugMod.Text = "Debug Mod";
             this.chkDebugMod.UseVisualStyleBackColor = true;
@@ -170,7 +170,7 @@
             // 
             // WinFormEImza
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Honeydew;
             this.ClientSize = new System.Drawing.Size(1160, 562);
@@ -184,11 +184,11 @@
             this.Controls.Add(this.btnDosyaSec);
             this.Controls.Add(this.btnSeciliBelgeleriImzala);
             this.Controls.Add(this.dgvBelgeler);
-            this.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.Name = "WinFormEImza";
-            this.Text = "WinFormEImza v1.0";
+            this.Text = "Hermes E-imza";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.WinFormEImza_FormClosing);
             this.Load += new System.EventHandler(this.WinFormEImza_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBelgeler)).EndInit();
