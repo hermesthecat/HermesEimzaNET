@@ -1,29 +1,28 @@
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+using System.Web.Http;
 using WinFormEImza.Models;
 using WinFormEImza.Services;
-using System.Collections.Generic;
 
 namespace WinFormEImza.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class SignatureController : ControllerBase
+    public class SignatureController : ApiController
     {
         private readonly ISignatureService _signatureService;
 
-        public SignatureController(ISignatureService signatureService)
+        public SignatureController()
         {
-            _signatureService = signatureService;
+            _signatureService = new SignatureService();
         }
 
-        [HttpPost("sign")]
-        public async Task<ActionResult<SignatureResponse>> SignDocuments([FromBody] SignatureRequest request)
+        [HttpPost]
+        [Route("api/signature/sign")]
+        public async Task<IHttpActionResult> SignDocuments([FromBody] SignatureRequest request)
         {
             try
             {
-                if (request.Documents == null || request.Documents.Count == 0)
+                if (request?.Documents == null || request.Documents.Count == 0)
                 {
                     return BadRequest("No documents provided");
                 }
@@ -47,19 +46,20 @@ namespace WinFormEImza.Controllers
             catch (Exception ex)
             {
                 // Log error
-                return StatusCode(500, $"Internal server error: {ex.Message}");
+                return InternalServerError(ex);
             }
         }
 
-        [HttpGet("status/{batchId}")]
-        public async Task<ActionResult<SignatureResponse>> GetSignatureStatus(string batchId)
+        [HttpGet]
+        [Route("api/signature/status/{batchId}")]
+        public async Task<IHttpActionResult> GetSignatureStatus(string batchId)
         {
             try
             {
                 var status = await _signatureService.GetSignatureStatusAsync(batchId);
                 if (status == null)
                 {
-                    return NotFound($"No signature batch found with id: {batchId}");
+                    return NotFound();
                 }
 
                 return Ok(status);
@@ -67,7 +67,7 @@ namespace WinFormEImza.Controllers
             catch (Exception ex)
             {
                 // Log error
-                return StatusCode(500, $"Internal server error: {ex.Message}");
+                return InternalServerError(ex);
             }
         }
     }

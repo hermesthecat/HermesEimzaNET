@@ -1,63 +1,47 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using WinFormEImza.Services;
+﻿using System;
 using System.Windows.Forms;
-using System;
+using Microsoft.Owin.Hosting;
 
 namespace WinFormEImza
 {
     static class Program
     {
+        private static IDisposable _webApp;
+
         [STAThread]
         static void Main()
         {
-            // Create and start the web application
-            var builder = WebApplication.CreateBuilder();
+            // Start OWIN host for Web API
+            string baseAddress = "http://localhost:5000/";
             
-            // Add services
-            builder.Services.AddControllers();
-            builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
-            builder.Services.AddSingleton<ISignatureService, SignatureService>();
-
-            // Add CORS policy
-            builder.Services.AddCors(options =>
+            try
             {
-                options.AddDefaultPolicy(builder =>
-                {
-                    builder.WithOrigins("http://localhost:5000")
-                           .AllowAnyHeader()
-                           .AllowAnyMethod();
-                });
-            });
-
-            var app = builder.Build();
-
-            // Configure middleware
-            if (app.Environment.IsDevelopment())
-            {
-                app.UseSwagger();
-                app.UseSwaggerUI();
+                _webApp = WebApp.Start<Startup>(url: baseAddress);
+                Console.WriteLine("Web API is running at " + baseAddress);
             }
-
-            app.UseHttpsRedirection();
-            app.UseStaticFiles(); // Enable serving static files from wwwroot
-            app.UseDefaultFiles(); // Enable serving default files (index.html)
-            app.UseCors(); // Enable CORS
-            app.UseAuthorization();
-            app.MapControllers();
-
-            // Start web application in background
-            var webTask = app.RunAsync("http://localhost:5000");
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Web API başlatılamadı: {ex.Message}", "Hata", 
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             // Start Windows Forms application
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new WinFormEImza());
-
-            // Wait for web application to complete
-            webTask.Wait();
+            
+            try
+            {
+                Application.Run(new WinFormEImza());
+            }
+            finally
+            {
+                // Dispose Web API host when application closes
+                if (_webApp != null)
+                {
+                    _webApp.Dispose();
+                }
+            }
         }
     }
 }
