@@ -168,6 +168,19 @@ namespace WinFormEImza.Islemler
         internal static void AyarlarDosyasiniYukle()
         {
             XmlDocument xmlDoc = new XmlDocument();
+
+            // check root dir
+            if (!Directory.Exists(ROOT_DIR))
+            {
+                Directory.CreateDirectory(ROOT_DIR);
+            }
+
+            // check config dir
+            if (!Directory.Exists(ROOT_DIR + @"\config"))
+            {
+                Directory.CreateDirectory(ROOT_DIR + @"\config");
+            }
+
             if (!File.Exists(AyarlarDosyasi))
             {
                 xmlDoc.LoadXml(@"<?xml version=""1.0"" encoding=""utf-8"" ?><KOK><GunBoyuPinSorma></GunBoyuPinSorma><DebugModAktifPasif></DebugModAktifPasif><Pin></Pin><Tarih></Tarih></KOK>");
